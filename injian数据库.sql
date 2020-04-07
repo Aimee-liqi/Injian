@@ -451,7 +451,7 @@ DROP TABLE IF EXISTS `order_info`;
 CREATE TABLE `order_info`  (
   `id` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL DEFAULT ' ',
   `user_id` int(11) NOT NULL DEFAULT 0,
-  `order_time` datetime(0) NOT NULL DEFAULT '1980-00-00 00:00:00',
+  `order_time` datetime(0) NOT NULL DEFAULT '1980-01-01 00:00:00',
   `item_id` int(11) NOT NULL DEFAULT 0,
   `item_price` double NOT NULL DEFAULT 0,
   `amount` int(11) NOT NULL DEFAULT 0,
@@ -501,8 +501,8 @@ DROP TABLE IF EXISTS `promo`;
 CREATE TABLE `promo`  (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `promo_name` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT ' ',
-  `start_date` datetime(0) NOT NULL DEFAULT '1980-00-00 00:00:00',
-  `end_date` datetime(0) NOT NULL DEFAULT '1980-00-00 00:00:00',
+  `start_date` datetime(0) NOT NULL DEFAULT '1980-01-01 00:00:00',
+  `end_date` datetime(0) NOT NULL DEFAULT '1980-01-01 00:00:00',
   `item_id` int(11) NOT NULL DEFAULT 0,
   `promo_item_price` double NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`) USING BTREE,
